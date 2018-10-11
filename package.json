@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all -l clean gitpull build",
+    "start": "npm install && npm-run-all -l clean gitpull build",
     "gitpull": "mkdirp ./bitcoin && ./scripts/pull-bitcoin",
     "build": "./scripts/build-bitcoin",
     "clean": "rimraf bitcoin/BUILD"
