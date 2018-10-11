@@ -10,3 +10,5 @@
 ```
   npm start
 ```
+
+### Bitcoin [docs](https://github.com/bitcoin/bitcoin/tree/master/doc)
