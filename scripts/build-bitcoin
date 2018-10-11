@@ -1,0 +1,7 @@
+
+mkdir -p bin
+#(mkdir -p bitcoin/BUILD && cd bitcoin/BUILD && ../autogen.sh && ../configure &&  MAKEFLAGS='-j$(nproc) -l$(nproc)' make)
+(mkdir -p bitcoin/BUILD && cd bitcoin/BUILD && ../autogen.sh && ../configure &&  MAKEFLAGS='-j16 -l16' make)
+(cp -r bitcoin/BUILD/src/bitcoind ./bin)
+(cp -r bitcoin/BUILD/src/bitcoin-cli ./bin)
+(cp -r bitcoin/BUILD/src/bitcoin-tx ./bin)
