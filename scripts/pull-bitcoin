@@ -1,1 +1,1 @@
-(./node_modules/rimraf/bin.js bitcoin && git clone --depth 1 https://github.com/bitcoin/bitcoin.git)
+[ ! -d bitcoin ] && git clone --depth 1 https://github.com/bitcoin/bitcoin.git
